@@ -2,11 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>TAB Spotify</title>
+    <title>Lupico Spotify</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" type ="text/css" href="style.css">
 </head>
-<body>
+<body onclick="playBgm()">
+    <audio id="bgm" src="assets/TOHO BGM.mp3" autoplay loop></audio>
+
+    <script>
+        function playBgm() {
+            document.getElementById("bgm").play();
+        }
+    </script>
+
     <div class="container">
         <div class="left">
             <div class="menu">
