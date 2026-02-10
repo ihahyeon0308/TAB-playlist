@@ -284,6 +284,27 @@ body {
     color: white;
 }
 
+.footer-player-left-song {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.footer-player-left-song-name {
+    display: inline-block;
+    animation: marquee 12s linear infinite;
+    padding-right: 50px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 .song-name-artist {
     padding-left: 15px;
     letter-spacing: 0.5px;
